@@ -9,9 +9,9 @@ int main(void)
 	int n = '0';
 	int g = '0';
 
-	while (n <= 9)
+	while (n <= '8')
 	{
-		while (g <= 9)
+		while (g <= '9')
 		{
 		if (!(n > g) || g == n)
 		{
