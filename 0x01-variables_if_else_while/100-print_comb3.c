@@ -8,20 +8,31 @@
  */
 int main(void)
 {
-	int n = 48;
-	int G = 48;
+	int n = '0';
+	int g = '0';
 
-	for (n; n >= 57; n++)
+	while (n <= 9)
 	{
-		for (g; g >= 57; g++)
-        {
-		if (g == n)
+		while (g <= 9)
 		{
-			continue;
+		if (!(n > g) || g == n)
+		{
+			putchar(n);
+			putchar(g);
+			if (n == '8' && g == '9')
+			{
+				putchar('\n');
+			}
+			else
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
-        }
-		putchar(n);
-		putchar(g);
+		g++;
+		}
+		g = '0';
+		n++;
 	}
 	return (0);
 }
