@@ -1,19 +1,27 @@
 #include "main.h"
 /**
-* print_rev - prints a string in reverse
-* @s: string to print
+*puts_half - puts half of a string
+*@str: string
+*Return:void
 */
-
-void print_rev(char *s)
+void puts_half(char *str)
 {
-int len = 0, index = 0;
-len = _strlen(s);
+int len = _strlen(str);
 
-for (index = len - 1; index >= 0; index--)
-_putchar(s[index]);
+if (len % 2 == 0)
+len = len / 2;
 
+else
+len = (len + 1) / 2;
+
+while (str[len] != '\0')
+{
+_putchar(str[len]);
+len++;
+}
 _putchar('\n');
 }
+
 
 /**
  *_strlen - returns the length of a string

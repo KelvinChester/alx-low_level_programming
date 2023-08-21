@@ -1,7 +1,7 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * _puts - takes pointer. 
+ * _puts - takes pointer.
  * @str: worked
  * Return: Always length.
  */
